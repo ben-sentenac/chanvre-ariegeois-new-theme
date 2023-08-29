@@ -1,0 +1,53 @@
+.cbd-btn {
+    background-color: var(--cbdYellow);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 3px 5px 4px 6px;
+    display: inline-block;
+    font-family: var(--textFont);
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+
+}
+
+.cbd-btn:hover {
+    background-color: #ffd700; 
+  }
+
+.cbd-btn::before {
+    /* Rest of the styles */
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cbd-btn:hover::before {
+    opacity: 1;
+    animation: lightning 0.5s linear forwards;
+  }
+
+
+@keyframes lightning {
+    0% {
+        background-position: -100% -100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: -100% -100%;
+    }
+}

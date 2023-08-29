@@ -1,0 +1,14 @@
+{
+    "name": "benfrom09/cbd",
+    "autoload": {
+        "psr-4": {
+            "Benfrom09\\CBD\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "benfrom09"
+        }
+    ],
+    "require": {}
+}

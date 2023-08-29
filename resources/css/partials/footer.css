@@ -1,0 +1,69 @@
+.cbd-footer {
+    background-color: var(--cbdBlackGreen);
+    padding: 1.5rem;
+    color: #fff;
+}
+
+span.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.cbd-footer-logo {
+    width: 100px;
+    margin: 0 0 2em 0;
+}
+
+.cbd-footer svg {
+    height: 2em;
+    fill: #fff;
+}
+
+.cbd-footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cbd-footer .legal a {
+    display: block;
+    font-family: var(--titleFont);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.cbd-footer .partners {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+}
+
+.cbd-footer .legal img {
+    width:64px;
+    margin:1rem 0 1rem 0;
+}
+
+.cbd-footer .footer-col-2 h3 {
+    transform: rotate(351deg);
+    color:black;
+}
+.cbd-footer .partners img {
+    height:auto;
+    width:64px;
+    display:block;
+    margin:10px auto;
+}
+
+@media(min-width:980px) {
+    
+    .cbd-footer-logo {
+        margin: 0 0 2em 0;
+    }
+
+    .cbd-footer-content {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+}

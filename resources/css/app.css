@@ -1,0 +1,621 @@
+@import './variables.css';
+@import './default.css';
+@import './partials/header.css';
+@import './partials/footer.css';
+@import './partials/product-review.css';
+
+
+.show-block [class*="show-block-"] {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.show-block-visible [class*="show-block-"] {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0, 0, 0.98);
+}
+
+.show-block-visible .show-block-2 {
+    transition-delay: 0.2s;
+}
+
+.show-block-visible .show-block-3 {
+    transition-delay: 0.3s;
+}
+
+.show-block-visible .show-block-4 {
+    transition-delay: 0.4s;
+}
+
+.text-center {
+    text-align:center;
+}
+
+main[class*="cbd-theme-template-"] {
+    min-height: 100vh;
+}
+
+main {
+    letter-spacing: 1px;
+}
+.shop-link {
+    margin-top:30px;
+    display:block;
+    text-decoration: underline;
+}
+.cbd-default-section h1 {
+    text-align: center;
+}
+
+@media(min-width:1200px) {
+    .cbd-default-section {
+        width: 70%;
+        margin: auto;
+        height:100vh;
+    }
+
+    .cbd-home-section h1 {
+        text-align:left;
+    }
+
+}
+
+.cbd-home-section {
+    font-family: var(--titleFont);
+    margin-top: 50px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.cbd-islocal {
+    display: block;
+}
+
+.cbd-islocal-content {
+    font-size: calc(var(--grid-unit)* 2.3);
+}
+
+.cbd-islocal-text {
+    margin: 0 0 2rem 0;
+}
+
+.cbd-islocal-img img {
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.cbd-slogan {
+    position: relative;
+    font-size: var(--font-xl);
+    margin: 1rem auto;
+}
+
+@media(min-width:980px) {
+    .s1 {
+        left: 0;
+    }
+
+    .s2 {
+        left: 25%;
+    }
+
+    .s3 {
+        left: 50%;
+    }
+}
+
+
+@media(min-width:980px) {
+    .cbd-home-section {
+        padding: 20px 100px;
+        text-align: left;
+    }
+
+    .cbd-islocal {
+        display:flex;
+        align-items: center;
+    }
+
+    .cbd-islocal-content {
+        width:50%;
+    }
+    .cbd-islocal-img {
+        width:50%;
+    }
+}
+
+
+.cbd-home-section.cbd-shop {
+    color: var(--primaryTextColor);
+    background-size: cover;
+}
+
+.cbd-posts-product-categories {
+    padding: 1rem;
+}
+
+.product-categories-title-container {
+    display: block;
+}
+
+h2.post-product-categories-title {
+    background-color: #FFF;
+}
+
+h3.post-product-categories-desc {
+    color: var(--cbdYellow);
+    font-size: 36px;
+}
+
+h2.post-product-categories-title,
+h3.post-product-categories-desc {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+
+@media(min-width:980px) {
+    .product-categories-title-container {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--grid-unit) * 10.313);
+    }
+
+    h2.post-product-categories-title {
+        margin-left: calc(-100px - 1rem) !important;
+        width: 350px;
+    }
+
+    h3.post-product-categories-desc {
+        align-self: flex-end;
+    }
+
+
+}
+
+.post-product-categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 20px;
+    margin-bottom: 1.5rem;
+
+}
+
+.cbd-post {
+    cursor: pointer;
+}
+
+.cbd-post-category {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: auto;
+
+}
+
+.cbd-post-category h3 {
+    text-align: center;
+    color: var(--cbdBlackGreen);
+    letter-spacing: 1px;
+
+}
+
+@media (min-width:980px) {
+    .post-product-categories-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+    }
+}
+
+.promo-code-container {
+    background: #000;
+    font-size: calc(var(--grid-unit)* 2.25);
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    font-family: var(--titleFont);
+}
+
+/*
+
+comments
+
+*/
+
+.cbd-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.cbd-comment {
+    line-height: 1.5em;
+    padding: 5em 3em;
+    margin: 1.2em auto;
+    border-radius: 3.2em;
+    max-width: 400px;
+    font-family: var(--textFont);
+    letter-spacing: 1px;
+
+}
+
+.cbd-comment img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.cbd-comment .name span::before {
+    margin-right: 7px;
+}
+
+.cbd-comment .name span::after {
+    margin-left: 7px;
+}
+
+.cbd-comment .name span::before,
+.cbd-comment .name span::after {
+    content: "";
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: #AD3074;
+    transform: translateY(-100%);
+}
+
+@media (min-width:980px) {
+    .cbd-comments {
+        flex-direction: row;
+    }
+}
+
+
+
+/****************************************************************************/
+
+/*                        LOCAL SECTION                                  */
+
+/***************************************************************************/
+.cbd-location {
+    padding: 20px 0;
+}
+
+.cbd-location-container {
+    display: block;
+    background: var(--cbdBlackGreen);
+}
+
+.cbd-location svg#wave {
+    position: relative;
+    top: 10px;
+}
+
+.cbd-location-wrapper {
+    background-color: var(--cbdBlackGreen);
+    width: 100%;
+}
+
+@media(min-width:980px) {
+    .cbd-location-container {
+        height: 100%;
+    }
+
+
+}
+
+.location {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-img-container {
+    z-index: 200;
+    text-align: center;
+}
+
+.location-img {
+    max-width: 500px;
+}
+
+.location-txt-content {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    font-size: 24px;
+    color: white;
+    font-family: var(--textFont);
+}
+
+.patchwork {
+    justify-content: center;
+}
+
+.patchwork-img {
+    margin: 0;
+    z-index: 100;
+}
+
+.patchwork-img img {
+    object-fit: cover;
+    display: block;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.draw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.draw-image-container {
+    margin: 1.5em 0 0 0;
+    opacity: 0.4;
+}
+
+@media (min-width:980px) {
+
+    .location {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .patchwork {
+        top: -300px;
+    }
+
+    .draw {
+        justify-content: flex-end;
+    }
+}
+
+.draw-image {
+    width: 100px;
+}
+
+.cbd-location {
+    margin-top: 0;
+    color: white;
+}
+
+.cbd-location-container {
+    padding: 20px;
+}
+
+.shop-locate {
+    font-family: var(--textFont);
+    text-align: left;
+}
+
+.cbd-location-title {
+    width: 100%;
+}
+
+.cbd-location-title h2,
+.store-location-title h3 {
+    padding: 20px;
+    letter-spacing: 1px;
+    z-index: 500;
+}
+
+.store-location #map {
+    height: 400px;
+    width: 100%;
+}
+
+@media(min-width:980px) {
+    .store-location-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .store-location #map {
+        width: 50%;
+    }
+
+    .store-location {
+        margin-top:-150px;
+    }
+
+}
+
+.store-location p {
+    font-size: 1.5em;
+    padding: 0 20px 20px;
+    margin-top: 0;
+    font-family: var(--textFont);
+}
+
+.store-location-header {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:980px) {
+    .store-location {
+        padding: 0 80px;
+    }
+
+    .cbd-location-title {
+        position: absolute;
+        top: calc(-20px - 40px - 1px - (var(--font-xl)));
+        left: 63%;
+        width: unset;
+        transform: unset;
+    }
+
+    .cbd-location-title h2 {
+        padding: 20px;
+        letter-spacing: 1px;
+        z-index: 500;
+    }
+}
+
+/*
+ABOUT
+*/
+
+.cbd-about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cbd-about-image-container {
+    padding: 1.5rem;
+    background: white;
+    margin: 0;
+}
+
+.cbd-text-content {
+    font-family: var(--articleFont);
+    padding: 1.5rem;
+    background: #e3e3e3;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+@media(min-width:980px) {
+    .cbd-about-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    .cbd-about-image-container {
+        width: 400px;
+        position: relative;
+        left: 2.5rem;
+    }
+
+    .cbd-text-content {
+        width: 60%;
+        padding: 1.5rem 3.5rem;
+    }
+}
+
+.cbd-about h2 {
+    color: var(--primaryTextColor);
+    transform: rotate(350deg);
+}
+
+/*
+about-me
+*/
+
+
+.cbd-about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbd-about-me-text-content {
+    font-family: var(--articleFont);
+    font-size: 1rem;
+    border: 2px solid var(--primaryTextColor);
+    padding: 0 1.5rem 1.5rem;
+    line-height: 1.5rem;
+    margin: 1.2rem 1.5rem 3rem 1.5rem;
+    letter-spacing: 1px;
+}
+
+.cbd-about-me-text-content h3 {
+    padding: 1rem;
+    display: inline-block;
+    font-size: 2rem;
+    transform: rotate(353deg);
+    position: relative;
+    top: 0;
+    z-index: 100;
+    background: white;
+    margin: 0;
+}
+
+.cbd-video-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px;
+}
+
+.cbd-about-me-zoom {
+    max-width: 400px;
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.cbd-about-me-zoom img {
+    object-fit: cover;
+    object-position: center;
+    width: 400px;
+    height: 400px;
+}
+
+.video-container {
+    height: 320px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:980px) {
+    .cbd-video-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        height: 500px;
+        margin: 100px auto;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(min-width:980px) {
+    .cbd-about-me-container {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .cbd-about-me-text-content {
+        width: 50%;
+    }
+
+    .cbd-about-me-text-content h3 {
+        top: -40px;
+    }
+
+    .cbd-about-me-zoom {
+        align-self: flex-end;
+        margin-top: 5rem;
+    }
+}

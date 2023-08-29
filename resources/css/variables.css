@@ -1,0 +1,26 @@
+:root {
+--cbdBlackGreen: #22775C;
+--cbdYellow: #FCC419;
+--cbdRed: #FF1E55;
+--cbdGreen: #30AD69;
+--primaryTextColor:#595757;
+--titleFont: 'Bebas Neue', sans-serif;
+--textFont: 'Proza Libre', sans-serif;
+--articleFont:'Roboto Serif', serif;
+--cbdPurple:#AD3074;
+--grid-unit:1rem;
+--font-xl:2rem;
+--font-xl-mobile:1.8rem;
+--boxShadow:0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+[data-theme="light"] {
+    --BgColor:#fff;
+    --color:var(--primaryTextColor);
+}
+
+[data-theme="dark"] {
+    --BgColor:#302f2f;
+    --color:#fff;
+}

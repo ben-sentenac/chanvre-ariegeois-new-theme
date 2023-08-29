@@ -1,0 +1,4 @@
+vendor
+resources/img/*
+resources/node_modules
+resources/build
